@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Timer</title>
+        <link rel="stylesheet" href="./src/css/reset.css" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+    </head>
+    <body>
+        <h1><img src="./src/images/weniv-logo.svg" alt="위니브" /></h1>
+        <main>
+            <h2 class="title">TIMER</h2>
+            <ul class="timer-con">
+                <li>
+                    <div class="hour">
+                        <span>HRS</span>
+                        <div class="timer-box">
+                            <input type="text" class="time" id="HRS" placeholder="00" />
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="min">
+                        <span>MIN</span>
+                        <div class="timer-box">
+                            <input type="text" class="time" id="MIN" placeholder="00" />
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sec">
+                        <span>SEC</span>
+                        <div class="timer-box">
+                            <input type="text" class="time" id="SEC" placeholder="00" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="btn-con">
+                <li>
+                    <button class="start-btn"><img src="./src/images/icon-start-disabled.svg" alt="" />START</button>
+                </li>
+                <li>
+                    <button class="reset-btn"><img src="./src/images/icon-reset-disabled.svg" alt="" />RESET</button>
+                </li>
+            </ul>
+        </main>
+        <footer>ⓒ WENIV CORP.</footer>
+        <script src="./src/scripts/script.js"></script>
+    </body>
+</html>

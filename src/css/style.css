@@ -1,0 +1,110 @@
+/*  ------ font ------  */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    background: radial-gradient(293.21% 130.49% at 3.59% 5.28%, #f0f4ff 0%, #a5b6ee 100%) no-repeat;
+    font-family: Pretendard;
+}
+
+main {
+    width: 400px;
+    padding: 48px 44px 40px 44px;
+    border-radius: 16px;
+    background: linear-gradient(144deg, #5572bb 2.13%, #374b7c 102.97%);
+    box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+}
+
+.title {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3d538a;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.timer-con {
+    padding: 32px 14px 40px 14px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #5b75b4;
+    display: flex;
+    gap: 24px;
+}
+.timer-con li {
+    display: flex;
+    position: relative;
+}
+
+.hour,
+.min,
+.sec {
+    color: #a5b6ee;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.timer-box {
+    width: 80px;
+    height: 80px;
+    margin-top: 6px;
+    background: url('../../src/images/box.svg') no-repeat;
+    background-size: 80px 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.timer-box::after {
+    content: '';
+    width: 6px;
+    height: 26px;
+    background: url(../../src/images/dot.svg);
+    background-size: 6px 26px;
+    display: block;
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timer-con li:last-child .timer-box::after {
+    content: none;
+}
+
+.btn-con {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    padding: 16px 24px;
+    color: #617199;
+    background-color: #324577;
+    border-radius: 40px;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    gap: 6px;
+}
+
+footer {
+    color: #8596bf;
+}
